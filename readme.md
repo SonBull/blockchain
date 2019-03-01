@@ -1,9 +1,10 @@
 # Blockchain Project
-This project is performed by Christopher Blume
+This project is designed to show, how a blockchain can be developed by using Python.
 
-## This is my work
+## Overview
 
-### Python and Blockchain
+### Introduction
 In this project i am trying to develop a small blockchain with Python. 
-The Goal of this activity is to learn the language Python and to understand the blockchain technology.
-I will try to create the necessary working packages ASAP!
+The Goal of this activity is to deepen the understanding of the language Python and to understand the blockchain technology.
+
+### How to run the code?
