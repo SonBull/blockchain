@@ -1,22 +1,33 @@
-#This is the first attempt of creating a blockchain with Python. 
-#Initialising empty list.
+# Initialising our blockchain
 blockchain = []
 
-#defining function to get the latest element in the list
+
 def get_last_blockchain_value():
+    """ Returns the last value of the current blockchain. """
     return blockchain[-1]
 
-#defining function to append a new element to the list
+
 def add_value(transaction_amount, last_transaction=[1]):
+    """ Append a new value as well as the last blockchain value to the blockchain.
+    
+    Arguments:
+        :transaction_amount: The amount that should be added.
+        :last_transaction: The last blockchain transaction (default [1])
+    """
     blockchain.append([last_transaction, transaction_amount])
-#user driven input of blockchain values.
-tx_amount = float(input('Your Transaction Amount please: '))
+
+
+def get_user_input():
+    """ Returns the input of the user (a new transaction amount) as a float. """
+    return float(input('Your Transaction Amount please: '))
+
+tx_amount = get_user_input()
 add_value(tx_amount)
 
-tx_amount = float(input('Your Transaction Amount please: '))
+tx_amount = get_user_input()
 add_value(tx_amount, get_last_blockchain_value())
 
-tx_amount = float(input('Your Transaction Amount please: '))
+tx_amount = get_user_input()
 add_value(tx_amount, get_last_blockchain_value())
-#printing the blockchain
+
 print(blockchain)
